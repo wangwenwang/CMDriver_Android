@@ -1,0 +1,48 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">5dp</dimen>
+    <dimen name="activity_vertical_margin">5dp</dimen>
+    <dimen name="activity_margin">10dp</dimen>
+    <dimen name="item_small_margin">2dp</dimen>
+    <!--字体小-->
+    <dimen name="text_size_small">13sp</dimen>
+    <!--字体正常大小-->
+    <dimen name="text_size_normal">14sp</dimen>
+    <!--字体大-->
+    <dimen name="text_size_bigger">16sp</dimen>
+    <!--栏目小-->
+    <dimen name="item_hight_small_">14dp</dimen>
+    <!--栏目正常-->
+    <dimen name="item_hight_nomal">20dp</dimen>
+    <!--栏目正常-->
+    <dimen name="item_hight_bigger">30dp</dimen>
+
+    <!--标题部分-->
+    <!--顶部标题栏字体大小-->
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="title_paddingleft">5dp</dimen>
+    <dimen name="title_paddingright">5dp</dimen>
+    <dimen name="title_paddingtop">8dp</dimen>
+    <dimen name="title_paddingbottom">8dp</dimen>
+
+    <!--LIstView 公用部分-->
+    <!--标题字体大小-->
+    <dimen name="listview_titletextsize">13sp</dimen>
+    <!--内容字体大小-->
+    <dimen name="listview_contenttestsize">14sp</dimen>
+    <!--内容局标题间隔-->
+    <dimen name="listview_spantexttotitle">5dp</dimen>
+    <!--顶部Padding-->
+    <dimen name="listview_item_paddingtop">5dp</dimen>
+    <!--底部Padding-->
+    <dimen name="listview_item_paddingbottom">5dp</dimen>
+    <!--左边Padding-->
+    <dimen name="listview_item_paddingleft">10dp</dimen>
+    <!--右边Padding-->
+    <dimen name="listview_item_paddingright">10dp</dimen>
+
+    <!--Dialog中按钮文字大小-->
+    <dimen name="dialog_button_textsize">14sp</dimen>
+    <!--Dialog中标题文字大小-->
+    <dimen name="dialog_title_textsize">14sp</dimen>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_activity_updateuif"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <com.kaidongyuan.app.basemodule.widget.SlidingTitleView
+        android:id="@+id/slidingtilte_activity_update_uif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:id="@+id/iv_user_icon"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/item_small_margin"
+        android:src="@drawable/mine_icon"
+        android:scaleType="fitCenter"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/listview_item_paddingright"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="联系电话："
+            android:textSize="@dimen/text_size_bigger"
+            android:layout_gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/ed_user_code"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="不填写,默认为不更改"
+            android:textSize="@dimen/text_size_bigger"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/listview_item_paddingright"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:text="常住地址："
+            android:textSize="@dimen/text_size_bigger"
+            android:layout_gravity="center_vertical"
+            />
+        <EditText
+            android:id="@+id/ed_ADDRESS"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="不填写,默认为不更改"
+            android:textSize="@dimen/text_size_bigger"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_update_uif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/blue_long_btn_bg"
+        android:text="@string/comfirm"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+</LinearLayout>

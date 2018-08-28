@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="model"
+            type="com.chenmaunion.app.cmdriver.viewmodel.DBModel_Login"/>
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fitsSystemWindows="true"
+        android:background="@color/track_bg"
+        >
+        <LinearLayout
+            android:paddingLeft="@dimen/listview_item_paddingleft"
+            android:paddingRight="@dimen/listview_item_paddingright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rounded_login_box_bg"
+            android:id="@+id/linearLayout">
+            <EditText
+                android:id="@+id/ed_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="@dimen/listview_item_paddingleft"
+                android:hint="@string/login_name"
+                android:inputType="phone"
+                android:padding="@dimen/listview_item_paddingleft"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textColorHint="#CCCCCC"
+                android:text="@={model.obName}"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#adb1b4" />
+            <EditText
+                android:id="@+id/ed_user_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColor="#000"
+                android:textColorHint="#CCCCCC"
+                android:text="@={model.obPwd}"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+
+            android:background="@drawable/blue_long_btn_bg"
+            android:text="没有帐号？免费注册"
+            android:textColor="@color/white"
+            android:onClick="@{model.onRegisterClick}"
+            android:textSize="@dimen/text_size_bigger"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/item_hight_nomal"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="@drawable/btn_bg_small_selector"
+            android:text="登\t\t\t录"
+            android:textColor="@color/white"
+            android:onClick="@{model.onLoginClick}"
+            android:layout_above="@id/bt_register"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/text_size_bigger"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/item_hight_bigger"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/bt_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_above="@id/bt_login"
+            android:background="@color/kdy_orange"
+            android:text="联\t系\t客\t服"
+            android:textSize="@dimen/text_size_bigger"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/listview_item_paddingbottom"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</layout>

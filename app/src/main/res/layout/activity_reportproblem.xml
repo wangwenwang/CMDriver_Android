@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <com.kaidongyuan.app.basemodule.widget.SlidingTitleView
+        android:id="@+id/slidingtilte_activity_reportproblem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <EditText
+        android:id="@+id/ed_problem_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请详细描述反馈意见或内容："
+        android:textSize="@dimen/text_size_normal"
+        android:layout_margin="@dimen/activity_margin"
+        android:paddingLeft="@dimen/title_paddingleft"
+        android:paddingRight="@dimen/title_paddingright"
+        android:background="@drawable/rounded_login_box_bg"
+        android:lines="10"
+        android:gravity="start"
+        />
+    <Button
+        android:id="@+id/bt_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提\t\t\t\t交"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/activity_margin"
+        android:paddingLeft="@dimen/title_paddingleft"
+        android:paddingRight="@dimen/title_paddingright"
+        android:background="@drawable/btn_bg_small_selector"/>
+</LinearLayout>

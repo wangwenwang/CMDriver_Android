@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        >
+        <com.kaidongyuan.app.basemodule.widget.SlidingTitleView
+            android:id="@+id/slidingtilte_activity_truckteams"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_truckteams"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            ></android.support.v7.widget.RecyclerView>
+        <include
+            layout="@layout/layout_no_record"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btn_activity_truckteams"
+            android:background="@drawable/blue_long_btn_bg"
+            android:text="@string/manage_truckteam"
+            android:textSize="@dimen/text_size_bigger"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/listview_item_paddingleft"
+            android:layout_marginRight="@dimen/listview_item_paddingright"
+            android:layout_marginBottom="@dimen/fab_labels_margin"
+            />
+
+    </LinearLayout>

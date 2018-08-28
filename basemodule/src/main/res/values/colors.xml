@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name="transparent_green">#44a9e46a</color>
+    <color name="transparent">#00000000</color>
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <color name="blue">#37BAFF</color>
+    <color name="loading_circle">#1ad6fd</color>
+    <color name="kdy_orange">#f08300</color>
+    <color name="white">#ffffffff</color>
+    <color name="yb_yellow">#F3A32D</color>
+    <color name="really_yellow">#f3c72d</color>
+    <color name="yb_light_green">#60B901</color>
+    <color name="yb_green">#009A4D</color>
+    <color name="red">#ff0000</color>
+    <color name="cm_orange">#E84601</color>
+    <color name="cm_yellow">#F48201</color>
+</resources>

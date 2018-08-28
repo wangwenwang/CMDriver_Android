@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <com.kaidongyuan.app.basemodule.widget.SlidingTitleView
+            android:id="@+id/title_orders_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TabLayout
+            android:background="@color/track_text"
+            android:id="@+id/tablayout_ordersFragment"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:tabIndicatorColor="@color/transparent"
+            app:tabSelectedTextColor="@color/yb_yellow"
+            app:tabTextColor="@color/yb_light_green"
+            app:tabMode="fixed"
+            app:tabBackground="@drawable/tab_bg_selector"
+            app:tabIndicatorHeight="3dp"
+            app:tabGravity="fill"></android.support.design.widget.TabLayout>
+        <com.chenmaunion.app.cmdriver.ui.widget.IsScrollableViewPager
+            android:id="@+id/viewPager_ordersFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></com.chenmaunion.app.cmdriver.ui.widget.IsScrollableViewPager>
+
+
+    </LinearLayout>
+</layout>

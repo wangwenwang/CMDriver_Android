@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+<data >
+    <variable
+        name="model"
+        type="com.chenmaunion.app.cmdriver.viewmodel.DBModel_Notify"/>
+</data>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:onClick="@{model.onNotifyClick}">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            >
+            <ImageView
+                android:id="@+id/iv_notify"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:icon_type="@{model.TYPE}"/>
+            <TextView
+                android:id="@+id/tv_notify_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.TITLE}"
+                android:layout_marginLeft="1dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/tv_notify_date"
+                android:layout_toRightOf="@+id/iv_notify"
+                android:layout_toEndOf="@+id/iv_notify" />
+
+            <TextView
+                android:id="@+id/tv_notify_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{model.ADD_DATE}"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_notify_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@{model.MESSAGE}"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toLeftOf="@+id/iv_notify_isRead"
+                />
+            <ImageView
+                android:id="@+id/iv_notify_isRead"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="3dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/circle_red"
+                android:layout_alignTop="@+id/tv_notify_title"
+                android:visibility="@{model.ISREAD}"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

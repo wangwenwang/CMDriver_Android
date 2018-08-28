@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/dialog_background_normal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/track_text"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/ed_driver_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:layout_height="30dp"
+            android:inputType="number"
+            android:hint="输入手机号码，查找要添加的司机"
+            android:background="@drawable/dialog_white"
+
+            android:gravity="center_vertical|left"/>
+        <ImageButton
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/bt_driver_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/search_btn_selector"
+            android:layout_gravity="center"
+            android:padding="0dp"
+            android:scaleType="fitXY"
+            />
+    </LinearLayout>
+<LinearLayout
+    android:id="@+id/ll_driver_search"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/track_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="司机姓名："
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tv_driver_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话："
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/tv_driver_tel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/bt_dialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="返\t\t回"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_bg_small_selector"
+        />
+
+</LinearLayout>

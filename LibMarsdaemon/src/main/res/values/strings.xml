@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Marsdaemon</string>
+    <string name="login_name">请输入帐号</string>
+    <string name="login_password">请输入密码</string>
+</resources>

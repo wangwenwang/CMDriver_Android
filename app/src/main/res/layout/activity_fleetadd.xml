@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <com.kaidongyuan.app.basemodule.widget.SlidingTitleView
+        android:id="@+id/slidingtilte_activity_fleetadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/title_paddingleft"
+            android:orientation="vertical"
+            android:background="@color/track_text"
+            >
+            <TextView
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请填写真实信息以便‘城马联盟’核实，感谢配合！"
+                android:textColor="@color/yb_yellow"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/text_size_bigger"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="车队名："
+                        android:textColor="@color/details_text"
+                        android:textSize="13sp" />
+                    <EditText
+                        android:id="@+id/ed_fleet_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="某某物流车队"
+                        android:textSize="13sp"
+                        android:textColor="@color/red"
+                        />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="负责人："
+                        android:textColor="@color/details_text"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/ed_fleet_manager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="姓名"
+                        android:textColor="@color/red"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="联系电话："
+                        android:textColor="@color/details_text"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/ed_fleet_manager_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="可使用的手机号码"
+                        android:inputType="phone"
+                        android:textColor="@color/red"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="车队类型："
+                        android:textColor="@color/details_text"
+                        android:textSize="13sp" />
+                    <TextView
+                        android:id="@+id/tv_fleet_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="个人/公司车队"
+                        android:textSize="13sp"
+                        android:textColor="@color/red"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_company_fleet"
+                    android:visibility="gone"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="公司名称："
+                        android:textColor="@color/details_text"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/ed_company_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:hint="某某物流公司"
+                        android:textColor="@color/red"
+                        android:textSize="13sp" />
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_tms_fleet_name"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:background="@null"-->
+                    <!--android:ellipsize="marquee"-->
+                    <!--android:focusable="true"-->
+                    <!--android:focusableInTouchMode="true"-->
+                    <!--android:marqueeRepeatLimit="marquee_forever"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:text=""-->
+                    <!--android:textColor="@color/red"-->
+                    <!--android:textSize="13sp" />-->
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+                <EditText
+                    android:id="@+id/ed_fleet_mark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/track_bg"
+                    android:gravity="start"
+                    android:hint="填写车队描述信息"
+                    android:lines="3" />
+
+
+            <LinearLayout
+                android:paddingTop="@dimen/title_paddingtop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:text="温馨提示："
+                        android:textSize="@dimen/text_size_bigger"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:text="1、请在网络良好的情况下,真实完整填报车队信息，以提供审核备案。"
+                        android:padding="@dimen/title_paddingleft"
+                        android:textSize="@dimen/text_size_bigger"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:text="2、请勿随意创建车队，我司将根据帐号ID核实车队真实性"
+                        android:padding="@dimen/title_paddingleft"
+                        android:textSize="@dimen/text_size_bigger"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:text="3、请征求对方同意后，才替他人创建车队。我司将根据负责人手机号码联系对方进行信息核实！"
+                        android:padding="@dimen/title_paddingleft"
+                        android:textSize="@dimen/text_size_bigger"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_truck_commit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/blue_long_btn_bg"
+                android:text="确\t认\t添\t加"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_bigger"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

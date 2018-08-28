@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="line_color">#adb1b4</color>
+    <color name="transparent_green">#44a9e46a</color>
+    <color name="transparent">#00000000</color>
+    <item name="gray_holo_dark" type="color">#ff464646</item>
+    <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <color name="gray_bg">#888888</color>
+    <color name="blue">#37BAFF</color>
+    <color name="loading_circle">#1ad6fd</color>
+    <color name="kdy_orange">#f08300</color>
+    <color name="white">#ffffffff</color>
+    <color name="yb_yellow">#F3A32D</color>
+    <color name="yb_light_green">#60B901</color>
+    <color name="yb_green">#009A4D</color>
+    <color name="black">#ff000000</color>
+    <color name="details_text">#ff333333</color>
+    <color name="track_bg">#fff9f9f9</color>
+    <color name="track_text">#ffE5E5E5</color>
+    <color name="really_yellow">#f3c72d</color>
+    <color name="light_yellow">#fff1cd</color>
+    <color name="book_yellow">#DFD08F</color>
+    <color name="cm_orange">#E84601</color>
+    <color name="cm_yellow">#F48201</color>
+    <color name="red_bg">#E4350F</color>
+</resources>

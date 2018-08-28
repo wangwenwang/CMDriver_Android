@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.kaidongyuan.app.basemodule.widget.SlidingTitleView
+        android:id="@+id/slidingtilte_fragment_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.kaidongyuan.app.basemodule.widget.SlidingTitleView>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_mine_icon"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:padding="@dimen/item_small_margin"
+                android:src="@drawable/mine_icon"
+                android:scaleType="fitCenter"
+                />
+            <LinearLayout
+                android:id="@+id/ll_mine_Assessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:clickable="true"
+                android:background="#fff"
+                android:visibility="gone">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_refresh"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/mine_Assessment"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+
+            <LinearLayout
+                android:id="@+id/ll_mine_truckteams"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+
+                android:background="#fff"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_truckteam"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/mine_truckteams"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+
+            <LinearLayout
+                android:id="@+id/ll_mine_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:background="#fff"
+                android:clickable="true"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_information"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/mine_information"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+
+            <LinearLayout
+                android:id="@+id/ll_driver_invite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:background="#fff"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_information"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/driver_invite"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+
+            <LinearLayout
+                android:id="@+id/ll_operating_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:background="#fff"
+                android:clickable="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_operating_instructions"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/operating_instructions"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+            <LinearLayout
+                android:id="@+id/ll_about_we"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:background="#fff"
+                android:clickable="true"
+                android:orientation="horizontal"
+                android:visibility="visible">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_driver_invite"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/about_we"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+            <LinearLayout
+                android:id="@+id/ll_normal_problems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:clickable="true"
+                android:background="#fff"
+                android:visibility="visible">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_mine_identity"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/normal_problems"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+            <LinearLayout
+                android:id="@+id/ll_report_problem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:background="#fff"
+                android:clickable="true"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_report_problem"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/report_problem"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+
+            <LinearLayout
+                android:id="@+id/ll_mine_identity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/listview_item_paddingleft"
+                android:paddingRight="@dimen/listview_item_paddingright"
+                android:background="#fff"
+                android:clickable="true"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_mine_identity"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:text="@string/mine_identity"
+                    android:textColor="#333333"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more"
+                    android:layout_gravity="center_vertical"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="#E2E2E2" />
+            <Button
+                android:id="@+id/bt_ExitAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg_small_selector"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="退\t出\t登\t陆"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
